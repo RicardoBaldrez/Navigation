@@ -2,15 +2,15 @@ import { View } from "react-native"
 import { useRoute } from "@react-navigation/native";
 
 // import { StackRoutes, StackRoutesProps } from "@/routes/StackRoutes";
-import { BottomTabRoutesProps } from "@/routes/BottomRoutes";
+import { DrawerRoutesProps } from "@/routes/DrawerRoutes";
 
 import Title from "@/components/Title"
 import Header from "@/components/Header"
 import ButtonIcon from "@/components/ButtonIcon";
 
-type RouteParams = BottomTabRoutesProps<"product">;
+type RouteParams = DrawerRoutesProps<"product">;
 
-export function Product({ navigation, route }: BottomTabRoutesProps<"product">) {
+export function Product({ navigation, route }: DrawerRoutesProps<"product">) {
 	const { params } = useRoute<RouteParams["route"]>();
 
 	return (
